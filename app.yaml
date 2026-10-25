@@ -63,3 +63,12 @@ automations:
 
 connections:
   - $ref: ./library/connection/github.yaml
+
+# Why the app is the way it is: the team's decision records, one file each,
+# beside the configuration they decided. Read them before changing what they
+# touch; a choice that replaces one is a new record that supersedes it. The
+# admin console lists them at `/_admin/decisions`.
+decisions:
+  - $ref: ./config/decisions/adr-001-assistants-add-never-edit.yaml
+  - $ref: ./config/decisions/adr-002-a-key-acts-as-its-owner.yaml
+  - $ref: ./config/decisions/adr-003-sqlite-by-default.yaml
