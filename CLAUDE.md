@@ -293,3 +293,12 @@ in `app.yaml`.
   issues, and add to the one you find rather than opening a second.
 - **A vulnerability is never a public issue.** Run `sovrium report --security`, which prints
   the private advisory form, and write the report there.
+- **An idea is not a bug.** Run `sovrium report --feature config-option`, `engine-primitive`
+  or `recipe` for the form that fits; an engine primitive says why existing pieces cannot be composed.
+- **Choose the Domain and the Kind of bug.** Both are required choices on the form; check them on
+  the page, since an address cannot select them.
+- **Write the Agent brief.** Numbered Given / When / Then acceptance criteria, the verification
+  command, and what is out of scope.
+- **Submit through the form, in the browser.** Never create the issue with `gh issue create`, the
+  API or an MCP tool: it would arrive with no type and no labels. The `sovrium-report-issue` skill
+  has the details.
